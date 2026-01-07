@@ -19,9 +19,9 @@ def get_score(grade):
         return None
 
 if sys.argv[1:]:
-    grades_input = " ".join(sys.argv[1:]).replace(",", " ")
+    grades_input = " ".join(sys.argv[1:])
 else:
-        grades_input = sys.stdin.read().replace("", " ")
+        grades_input = sys.stdin.read()
 
 grades = grades_input.split()
 
