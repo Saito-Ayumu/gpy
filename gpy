@@ -24,7 +24,7 @@ count = 0
 
 for grade in grades:
     scoer = get_score(grade)
-    if score is not None
+    if score is not None:
     total +=score
     count += 1
 
