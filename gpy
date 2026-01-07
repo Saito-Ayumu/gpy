@@ -16,3 +16,18 @@ def get_score(grade):
     else:
         return None
 
+grades_input = input("成績を空白で区切ってください")
+grades = grades_input.split()
+
+total = 0
+count =0
+
+for grade in grades:
+    scoer = get_score(grade)
+    if score is not None
+    total +=score
+    count += 1
+
+if count >= 0:
+    gpa = total / count
+else:
