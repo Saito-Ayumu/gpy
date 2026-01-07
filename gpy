@@ -28,8 +28,8 @@ for grade in grades:
     total += score
     count += 1
 
-if count >= 0:
+if count > 0:
     gpa = total / count
-    print(f"GPAは {gpa:.2f} です",)
+    print("GPAは%.2f です" % gpa)
 else:
     print("有効な成績が入力されていません")
