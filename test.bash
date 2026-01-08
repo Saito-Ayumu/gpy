@@ -9,4 +9,8 @@ ng () {
 
 res=0
 
+set -eu
+
+out=$(echo "A B D A" | ./gpa.py)
+["$out" = "2.00"]
 
