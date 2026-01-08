@@ -15,6 +15,14 @@ GPAは2.00 です
 
 ---
 
+## インストール
+```bash
+git clone https://github.com/Saito-Ayumu/gpa.py
+cd gpa.py
+chmod +x gpa.py test.bash
+```
+---
+
 ## 成績からのGPA算出
 
 * 入力: 成績"S A B C D"(空白区切り)
@@ -23,12 +31,14 @@ GPAは2.00 です
 
 ---
 
-## インストール
-```bash
-git clone https://github.com/Saito-Ayumu/gpa.py
-cd gpa.py
-chmod +x gpa.py test.bash
-```
+## 必要なソフトウェア
+- Python
+    - テスト済みバージョン: 3.7 ~ 3.10
+
+---
+
+## テスト環境
+- Ubuntu 24.04 LTS
 
 --- 
 
