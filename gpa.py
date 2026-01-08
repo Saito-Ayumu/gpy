@@ -38,7 +38,7 @@ for grade in grades:
 
 if count > 0:
     gpa = total / count
-    print("GPAは%.1f です" % gpa)
+    print("GPAは%.2f です" % gpa)
 else:
     print("有効な成績が入力されていません")
     sys.exit(1)
