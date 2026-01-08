@@ -10,7 +10,9 @@ ng () {
 res=0
 
 out=$(echo "A B D A" | ./gpa.py)
-["$out" = "2.00"]
+[ "$out" = "GPAは2.00" ]
 
 if echo "A X" | ./gpy >/dev/null 2>/dev/null; then
+	res=1
+
 exit $res
