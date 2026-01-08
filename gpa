@@ -19,11 +19,9 @@ def get_score(grade):
         return None
 
 if sys.argv[1:]:
-    grades_input = " ".join(sys.argv[1:])
+    grades = sys.argv[1:]
 else:
-        grades_input = sys.stdin.read()
-
-grades = grades_input.split()
+    grades = sys.stdin.read().split()
 
 total = 0
 count = 0
@@ -36,9 +34,9 @@ for grade in grades:
     else:
         print(f"無効な成績を無視しました: {grade}")
 
-if count > 0:
-    gpa = total / count
-    print("%.2f" % gpa)
-else:
+if count == 0:
     print("有効な成績が入力されていません")
-    sys.exit(1)
+    sys.exit (1)
+
+gpa = total / count
+print("%.2f" % gpa)
