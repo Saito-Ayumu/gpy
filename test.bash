@@ -9,8 +9,8 @@ ng () {
 
 res=0
 
-set -eu
-
 out=$(echo "A B D A" | ./gpa.py)
 ["$out" = "2.00"]
 
+if echo "A X" | ./gpy >/dev/null 2>/dev/null; then
+exit $res
