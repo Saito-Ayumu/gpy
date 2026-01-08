@@ -10,7 +10,7 @@ ng () {
 res=0
 
 out=$(echo "A B D A" | ./gpa)
-[ "${out}" = "GPAは2.00 です" ] || ng "$LINENO"
+[ "${out}" = "2.00" ] || ng "$LINENO"
 
 [ "${res}" = 0 ] && echo OK
 exit $res
